@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* CSS Variables */
+:root {
+    --normal-font: 400;
+    --bold-font: 600;
+    --bolder-font: 900;
+    --primary-color: #001D5D; /*Blue*/
+    --secondary-color: #42A418; /*Green*/   
+    --transition: 0.4s ease-in;
+  }
+  
+   
+  /* Resets */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: var(--transition);
+  }
+  
+   body {
+    font-family: "Inter", sans-serf;
+  }
+  
+  ul li {
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  } 
+
+  nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 50px;
+    box-shadow: 2px 3px 2px #f1f1f1;
+    border:none;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-item {
+    margin-left: 4rem;
+    font-size: 18px;
+    font-weight:500;
+  }
+  .nav-item img{
+    padding-right: 12px;
+  }
+  .hero{
+    overflow:hidden;
+  }
+  .hero-bg{
+    background-image:url('assets/images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg');
+    background-size:cover;
+    max-width:100%;
+    min-height:720px;
+    animation: zoom-in-out 2500ms ease-in infinite;
+    overflow:hidden;
+  }
+
+  @keyframes zoom-in-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.1, 1.1);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
