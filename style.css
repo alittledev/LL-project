@@ -15,8 +15,29 @@
   * {
     margin: 0;
     padding: 0;
+    font-size: 100%;
+    border: 0;
     box-sizing: border-box;
-    transition: var(--transition);
+    /*transition: var(--transition);*/
+  }
+
+  /*Typography*/
+  h1{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 72px;
+   }
+  
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+   a:hover {
+    color: var(--secondary-color);
+  } 
+  p{
+    font-size:16px;
+    line-height:24px;
   }
   
    body {
@@ -26,17 +47,7 @@
   ul li {
     list-style-type: none;
   }
-  
-  a {
-    text-decoration: none;
-    color: var(--primary-color);
-  }
-  
-  a:hover {
-    color: var(--secondary-color);
-  } 
-
-  nav {
+ nav {
     position: sticky;
     top: 0;
     left: 0;
@@ -46,8 +57,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 12px 50px;
-    box-shadow: 2px 3px 2px #f1f1f1;
-    border:none;
+    height: 64px;
   }
   
   ul {
@@ -65,14 +75,16 @@
   }
   .hero{
     overflow:hidden;
-  }
+    height:720px;
+    }
   .hero-bg{
-    background-image:url('assets/images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg');
+    background:linear-gradient(0deg, rgba(0, 0, 00, 0.4), rgba(0, 0, 0, 0.4)), url('assets/images/marcela-laskoski-YrtFlrLo2DQ-unsplash.jpg');
     background-size:cover;
-    max-width:100%;
-    min-height:720px;
-    animation: zoom-in-out 2500ms ease-in infinite;
+    max-width:100%;    
+    animation: zoom-in-out 3000ms ease-in infinite;
     overflow:hidden;
+    height:720px;
+   
   }
 
   @keyframes zoom-in-out {
@@ -86,3 +98,52 @@
       transform: scale(1, 1);
     }
   }
+
+.container{
+  position:relative;
+}
+ .hero-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  display: flex;
+  padding: 48px 0px;
+  gap: 24px;
+  position: absolute;
+  top: 170px;
+  left:150px;
+  width: 40%;
+ }
+ .watch-now{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 1.5rem;
+ }
+ .play-btn{
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF;
+  border-radius: 50px;
+  position: relative;
+
+ }
+ .play-btn img{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 20px;
+  top: 20px;
+ }
+ .video-cta{
+   display:flex;
+   flex-direction: row;
+   align-items: center;
+ }
+
+ 
+
+
+
+
