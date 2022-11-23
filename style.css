@@ -307,3 +307,8 @@ button:hover{
 .nav-arrows{
   padding: 40px 0 80px 0;
 }
+
+#map {
+  height: 544px;
+  width: 100%;
+}
