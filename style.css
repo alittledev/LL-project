@@ -264,9 +264,15 @@ button:hover, .cta:hover{
   max-width:100%;
   overflow: hidden;
 }
-/*.slide-container:not(.slick-center){
+
+/*
+*It seems Slick's active slide/ center slide on center mode aren't accurate.
+*I didn't dig into this too deeply.
+/*
+.slide-container:not(.slick-current, .slick-active){
   opacity: 0.32;
 }*/
+
 .slick-next{
   right:44% !important;
  
@@ -343,9 +349,7 @@ button:hover, .cta:hover{
   top: -80px;
   left:0;
 }
-
 .full-height img{
-  width: 655px;
   height: 782px;
   object-fit:cover;
 }
@@ -484,9 +488,11 @@ input::placeholder{
   }
 
   .about{
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
-  .image-container{
+  .image-container {
+    display:block;
+    flex:none;
    height:400px;
   }
 
