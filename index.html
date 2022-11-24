@@ -11,11 +11,11 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav>
+    <nav >
       <a href="#" class="logo">
         <img src = "assets/logos/Logo-Blue.svg">
       </a>
-      <ul>
+      <ul class = "nav-bar" id = "nav-bar">
         <li class="nav-item">
           <a href="#" class="nav-link" id="nav-link"><img src="assets/icons/Nav Icons/Home.svg">Home</a>
         </li>
@@ -32,10 +32,17 @@
           <a href="#" class="nav-link" id="nav-link"><img src="assets/icons/Nav Icons/Calendar.svg">Concerts</a>
         </li>
     </ul>
-    <button class ="cta">Sign Up</button>
-  </nav>
 
     <!--Mobile Bars -->
+  <div class="hamburger" id="hamburger" onclick = "onMenuClick()">
+   <div class="bar"></div>
+   <div class="bar"></div>
+   <div class="bar"></div>
+  </div>
+  
+  <button class ="cta">Sign Up</button>
+  </nav>
+
 
     <!-- Hero section -->
 <section class ="hero">
@@ -179,8 +186,8 @@
       <div class = "address">
         8521 W Fairfax Rd<br/>
         Los Angeles, CA<br/>
-        8521 W Fairfax Rd<br/>
-        Los Angeles, CA<br/> 
+        990210<br/> 
+        (909) 505 4302
       </div>
     </div>
     <div class = "footer-col">
@@ -281,15 +288,32 @@
     </div>
   </div>
   <div class = "footer-utility">
-    <ul>
-      <li>
-        Privacy Policy
-      </li>
-      <li>
-        Terms & Conditions
-      </li>
-    </ul>
-
+    <div class = "utility-links">
+      <ul>
+        <li>
+          Privacy Policy
+        </li>
+        <li>
+          Terms & Conditions
+        </li>
+      </ul>
+    </div>
+    <div class = "social links">
+      <ul>
+        <li>
+          <img src = "assets/icons/Social Icons/007-instagram 1.svg" class ="colorize-white">
+        </li>
+        <li>
+          <img src = "assets/icons/Social Icons/009-youtube 1.svg" class ="colorize-white">
+        </li>
+        <li>
+          <img src = "assets/icons/Social Icons/004-twitter 1.svg" class ="colorize-white">
+        </li>
+        <li>
+          <img src = "assets/icons/Social Icons/002-facebook 1.svg" class ="colorize-white">
+        </li>
+      </ul>
+    </div>
   </div> 
 
 </footer>

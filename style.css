@@ -87,6 +87,9 @@ button:hover, .cta:hover{
     padding: 12px 50px;
     height: 64px;
   }
+  nav button{
+    padding: 8px 54px !important;
+  }
   
   nav ul {
     display: flex;
@@ -304,6 +307,12 @@ button:hover, .cta:hover{
 .slick-next:before {
   content: url('assets/icons/Basic\ Icons/Arrows Button Right.svg') !important;
 }
+.slick-prev:hover:before {
+  filter: brightness(0) invert(1); 
+}
+.slick-next:hover:before {
+  filter: brightness(0) invert(1); 
+}
 
 .nav-arrows{
   padding: 40px 0 80px 0;
@@ -357,6 +366,7 @@ button:hover, .cta:hover{
   font-size:14;
   color:#777777;
   line-height:20px;
+  padding-bottom:8px;
 }
 .form select,textarea, input[type="text"], input[type="email"]{
   border: 1px solid #777777;
@@ -365,6 +375,7 @@ button:hover, .cta:hover{
   padding: 16px 10px 16px 16px;
   gap: 10px;
   margin-bottom: 22px;
+  margin-top: 6px;
 }
 .form select:focus ,textarea:focus, input[type="text"]:focus, input[type="email"]:focus{
   border: 1px solid var(--primary-color);
@@ -399,6 +410,7 @@ input::placeholder{
   flex-direction: column;
 }
 .address{
+  padding-top: 24px;
   font-weight: 500;
   font-size: 18px;
   line-height: 26px;
@@ -423,9 +435,98 @@ input::placeholder{
   border-top:  1px solid #FFFFFF;
   padding-top: 30px;
   margin-top:50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .footer-utility ul{
   display: flex;
   flex-direction: row;
   gap: 78px;
+}
+
+.colorize-white{  
+  filter: brightness(0) invert(1); 
+}
+
+/*Responsive*/
+.hamburger {
+  display: none;
+}
+.bar{
+  background-color: var(--primary-color);
+  width: 30px;
+  height:4px;
+  margin: 4px 0;
+}
+@media screen and (max-width: 950px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-bar {
+    display: none;
+    position: absolute;
+    top: 63px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+  }
+  .nav-bar.responsive {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding:20px 0;
+  } 
+  .nav-item{
+    padding:12px 0;
+  }
+
+  .about{
+    flex-direction: column;
+  }
+  .image-container{
+   height:400px;
+  }
+
+  .slide-container{
+    width:300px !important;
+  }
+  .slide-img img{
+    width: 100px;
+   height:100px;
+  }
+  .slick-next{
+    right:16% !important;
+   
+  }
+  .slick-prev{
+    left:16% !important;
+  }
+
+  .get-in-touch{
+    display: flex;
+    flex-direction: column;
+  }
+  .half-width {
+    display: flex;
+    flex-direction:column;
+}
+.get-in-touch .img-container{
+  height:400px;
+}
+.full-height{
+  top:0;
+  left:-50px;
+}
+.footer-wrapper{
+  flex-direction:column;
+}
+.footer-utility ul{
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
 }

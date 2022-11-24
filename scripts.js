@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $('.slider-container').slick({
-        centerMode: true,
+        centerMode: false,
         slidesToShow: 1,
         slidesToScroll:1,
         arrows: true,
@@ -8,20 +8,18 @@ $(document).ready(function(){
         infinite: true,
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 950,
             settings: {
               arrows: true,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 3
+              centerMode: false,
+              slidesToShow: 1
             }
           },
           {
             breakpoint: 480,
             settings: {
               arrows: true,
-              centerMode: true,
-              centerPadding: '40px',
+              centerMode: false,
               slidesToShow: 1
             }
           }
@@ -46,6 +44,15 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
+
+function onMenuClick() {
+    var navbar = document.getElementById('nav-bar');
+    var responsive_class_name = 'responsive'
+    navbar.classList.toggle(responsive_class_name)
+}
+
+
 
 
 
