@@ -32,7 +32,7 @@
           <a href="#" class="nav-link" id="nav-link"><img src="assets/icons/Nav Icons/Calendar.svg">Concerts</a>
         </li>
     </ul>
-    <button class ="cta" href="#sign-up">Sign Up</button>
+    <button class ="cta">Sign Up</button>
   </nav>
 
     <!--Mobile Bars -->
@@ -115,9 +115,184 @@
   <div id = "map"></div>
 </section>
     <!-- Get in Touch -->
-
+<section class = "get-in-touch">
+  <div class = "contact">
+    <div class = "content">
+      <h3>
+        Get In Touch
+      </h3>
+      <p>
+        New albums every single month, check out the newest & best from Snyder Recording artist, now available on Apple Music & Spotify. 
+      </p>
+    </div>
+    <div class = "form">
+      <div class ="half-width">
+        <div class = "form-group">
+          <label for="first-name" class="form-label">First name</label>
+          <div class="input-group">
+            <input type="text" id="first-name" name="first-name" class="form-control" placeholder="First Name" required>
+          </div>
+          <label for="last-name" class="form-label">Last name</label>
+          <div class="input-group">
+              <input type="text" id="last-name" name="last-name" class="form-control" placeholder = "Last Name" required>
+          </div>
+      </div>
+      <div class = "form-group">
+        <label for="email" class="form-label">Email Address</label>
+        <div class="input-group">
+            <input type="email" id="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+        <label for="contact-reason">Reason for Contacting</label>
+        <div class = "input-group">
+          <select id="contact-reason" name="contact-reason">
+            <option value="" disabled selected hidden>Select One</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+      </div>      
+    </div>
+    </div>
+    <div class = "full-width">
+    <label for="message" class="form-label">Message (Optional)</label>
+      <div class="input-group">
+          <textarea id="message" name="message" class="form-control" placholder = "Write a brief message..." rows="4"></textarea>
+    </div>      
+  </div>
+  <input type = "submit" value = "Learn More" class = "cta">
+</div>
+</div>
+  <div class="img-container">
+    <div class = "full-height">
+      <img src = "assets/images/harry-swales-0l0KjNoAfAk-unsplash.jpg" >
+    </div>
+    
+  </div>
+</section>
     <!-- Footer -->
+<footer class = "footer">
+  <div class = "footer-wrapper">
+    <div class = "footer-col">
+      <span class = "logo">
+        <img src = "assets/logos/Logo-White.svg">
+      </span>
+      <div class = "address">
+        8521 W Fairfax Rd<br/>
+        Los Angeles, CA<br/>
+        8521 W Fairfax Rd<br/>
+        Los Angeles, CA<br/> 
+      </div>
+    </div>
+    <div class = "footer-col">
+      <div class = "footer-header">
+        Explore
+      </div>
+      <div class = "footer-nav">
+        <ul>
+          <li>
+            About Us
+          </li>
+          <li>
+            Our Story
+          </li>
+          <li>
+            Team
+          </li>
+          <li>
+            Careers
+          </li>
+          <li>
+            FAQ
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class = "footer-col">
+      <div class = "footer-header">
+       Music
+      </div>
+      <div class = "footer-nav">
+        <ul>
+          <li>
+            Missing Out
+          </li>
+          <li>
+            Trapsoul
+          </li>
+          <li>
+            Sonder Sons
+          </li>
+          <li>
+            Paradise Today
+          </li>
+          <li>
+            Needed
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class = "footer-col">
+      <div class = "footer-header">
+        Artists
+      </div>
+      <div class = "footer-nav">
+        <ul>
+          <li>
+            Brent Faiyaz
+          </li>
+          <li>
+            Drake
+          </li>
+          <li>
+            Bryson Ford
+          </li>
+          <li>
+            Young Ford
+          </li>
+          <li>
+            Roy Fresco
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class = "footer-col">
+      <div class = "footer-header">
+        Records
+      </div>
+      <div class = "footer-nav">
+        <ul>
+          <li>
+            What a Time
+          </li>
+          <li>
+            Coming Home
+          </li>
+          <li>
+            Always First
+          </li>
+          <li>
+            So Far Gone
+          </li>
+          <li>
+            Big Bluez
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class = "footer-utility">
+    <ul>
+      <li>
+        Privacy Policy
+      </li>
+      <li>
+        Terms & Conditions
+      </li>
+    </ul>
 
+  </div> 
+
+</footer>
  
     <!-- Web page script -->
    
@@ -125,16 +300,13 @@
   src="https://code.jquery.com/jquery-3.6.1.js"
   integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
   crossorigin="anonymous"></script>
-    <script
-  src="https://code.jquery.com/jquery-migrate-3.4.0.js"
-  integrity="sha256-0Nkb10Hnhm4EJZ0QDpvInc3bRp77wQIbIQmWYH3Y7Vw="
-  crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="assets/js/slick-1.8.1 2/slick/slick.min.js"></script>
   
     <script src="scripts.js"></script>
     <script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDzD5ERIRAJiKctKqKhEU4zsbhi4HC1v4&callback=initMap">
-</script>
+    </script>
     
    </body>
 </html>
